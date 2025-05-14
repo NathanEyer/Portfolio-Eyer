@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nathan Eyer - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="header-content">
             <h1>Nathan Eyer</h1>
-            <h2>Étudiant en BUT Informatique | Spécialisé en Systèmes et Réseaux</h2>
-            <a href="CV_EYER_Alternance.pdf" class="btn-download" download>Télécharger mon CV</a>
+            <p class="subtitle">Étudiant en BUT Informatique | Parcours DACS</p>
+            <a href="CV_EYER_Alternance.pdf" class="btn btn-primary" download>Télécharger mon CV</a>
         </div>
     </header>
     <nav>
@@ -26,30 +26,55 @@
     </nav>
     <main>
         <div class="container">
-            <section class="welcome-section">
-                <h3>Bienvenue sur mon Portfolio</h3>
+            <section class="section welcome-section">
+                <h2>Bienvenue sur mon Portfolio</h2>
                 <div class="divider"></div>
-                <p>Je suis étudiant en BUT Informatique à l'IUT Charlemagne Nancy, spécialisé dans le parcours Déploiement d'Applications Communicantes et Sécurisées (DACS). Passionné par les systèmes et réseaux, je recherche une alternance pour 2025/2026 pour approfondir mes compétences en administration, sécurité et virtualisation. Ce portfolio présente mes compétences, projets et expériences professionnelles.</p>
-                <p>Rigoureux, curieux et dynamique, j’aime relever des défis techniques et contribuer à des projets innovants. Explorez mes réalisations et n’hésitez pas à me contacter !</p>
+                <p>Je suis étudiant en BUT Informatique à l’IUT Charlemagne Nancy, spécialisé dans le parcours Déploiement d’Applications Communicantes et Sécurisées (DACS). Passionné par les systèmes et réseaux, je recherche une alternance pour 2025/2026 afin de perfectionner mes compétences en administration, sécurité informatique et virtualisation.</p>
+                <p>Rigoureux, curieux et collaboratif, j’aime résoudre des problèmes techniques complexes et contribuer à des projets innovants. Ce portfolio met en lumière mes compétences, projets et expériences. Explorez et contactez-moi pour discuter d’opportunités !</p>
             </section>
-            <section class="projects-section">
-                <h3>Projets Réalisés</h3>
+            <section class="section projects-section">
+                <h2>Mes Projets</h2>
                 <div class="divider"></div>
-                <div class="project-card">
-                    <h4>Développement Web - ApiTracer</h4>
-                    <p>Stage chez SARL Les Ruchers du Bassigny (Fév-Avr 2025). Développement de nouvelles fonctionnalités pour le site web ApiTracer en PHP, intégration d’API et optimisation de l’interface utilisateur.</p>
-                    <span class="tag">PHP</span><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span>
-                </div>
-                <div class="project-card">
-                    <h4>Projet Universitaire - Gestion de Réseau</h4>
-                    <p>Configuration d’un réseau local avec DNS et DHCP sous Linux. Mise en place de scripts Bash pour automatiser la gestion des services.</p>
-                    <span class="tag">Linux</span><span class="tag">Bash</span><span class="tag">Réseaux</span>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Développement Web - ApiTracer</h3>
+                        <p><strong>SARL Les Ruchers du Bassigny</strong> | Fév-Avr 2025</p>
+                        <p>Conception et implémentation de nouvelles fonctionnalités pour ApiTracer, incluant une interface de suivi des ruches et une API REST pour la synchronisation des données. Optimisation de la performance et refonte CSS pour une meilleure UX.</p>
+                        <div class="tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Gestion de Réseau Local</h3>
+                        <p><strong>Projet Universitaire</strong> | 2024</p>
+                        <p>Configuration d’un réseau local sécurisé avec DNS, DHCP et pare-feu sous Linux. Développement de scripts Bash pour automatiser la gestion des services et la surveillance des performances réseau.</p>
+                        <div class="tags">
+                            <span class="tag">Linux</span>
+                            <span class="tag">Bash</span>
+                            <span class="tag">Réseaux</span>
+                            <span class="tag">Sécurité</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Conteneurisation d’Application</h3>
+                        <p><strong>Projet Personnel</strong> | 2024</p>
+                        <p>Déploiement d’une application web dans un conteneur Docker, avec configuration Nginx et base de données MySQL. Documentation des étapes pour assurer la reproductibilité.</p>
+                        <div class="tags">
+                            <span class="tag">Docker</span>
+                            <span class="tag">Nginx</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">DevOps</span>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
     </main>
     <footer>
-        <p>© 2025 Nathan Eyer. Tous droits réservés.</p>
+        <p>&copy; 2025 Nathan Eyer. Tous droits réservés.</p>
     </footer>
 </body>
 </html>

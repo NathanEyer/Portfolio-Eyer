@@ -1,22 +1,28 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f5f7fa;
-    color: #2d3436;
+    min-height: 100%;
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    background: linear-gradient(135deg, #0984e3, #6c5ce7);
-    padding: 60px 20px;
+    background: linear-gradient(135deg, #1e3a8a, #7c3aed);
+    padding: 4rem 1rem;
     text-align: center;
-    border-bottom: 5px solid #dfe6e9;
+    border-bottom: 4px solid #e2e8f0;
 }
 
 .header-content {
@@ -26,186 +32,208 @@ header {
 
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 3em;
-    color: #fff;
-    margin-bottom: 10px;
+    font-size: 2.8rem;
+    color: #ffffff;
+    font-weight: 600;
 }
 
-h2 {
-    font-size: 1.4em;
-    color: #dfe6e9;
-    font-weight: 300;
+.subtitle {
+    font-size: 1.2rem;
+    color: #e2e8f0;
+    margin: 0.5rem 0 1.5rem;
 }
 
-.btn-download {
+.btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    background: #ffffff;
-    color: #0984e3;
+    padding: 0.75rem 1.5rem;
     text-decoration: none;
-    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    border-radius: 50px;
     font-weight: 500;
-    font-size: 1.1em;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.btn-download:hover {
-    background: #dfe6e9;
-    color: #2d34
-36;
+.btn-primary {
+    background: #ffffff;
+    color: #1e3a8a;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    background: #e2e8f0;
+    color: #1e293b;
 }
 
 nav {
-    background: #2d3436;
-    padding: 15px 0;
-    border-bottom: 3px solid #0984e3;
+    background: #1e293b;
+    padding: 1rem 0;
+    border-bottom: 3px solid #1e3a8a;
 }
 
 nav ul {
     list-style: none;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 nav ul li a {
-    color: #dfe6e9;
+    color: #e2e8f0;
     text-decoration: none;
-    font-size: 1.2em;
     font-family: 'Poppins', sans-serif;
-    padding: 8px 12px;
-    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
 }
 
-nav ul li a.active, nav ul li a:hover {
-    background: #0984e3;
+nav ul li a:hover, nav ul li a.active {
+    background: #1e3a8a;
     color: #ffffff;
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 30px auto;
-}
-
-main {
+    margin: 2rem auto;
     flex: 1;
 }
 
-section {
+.section {
     background: #ffffff;
-    padding: 30px;
-    border-radius: 15px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    border-left: 5px solid #0984e3;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #1e3a8a;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    color: #1e3a8a;
+    margin-bottom: 1rem;
 }
 
 h3 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2em;
-    color: #0984e3;
-    margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: #1e293b;
+    margin-bottom: 0.75rem;
 }
 
 .divider {
-    width: 80px;
+    width: 60px;
     height: 4px;
-    background: #6c5ce7;
-    margin-bottom: 20px;
+    background: #7c3aed;
+    margin-bottom: 1.5rem;
     border-radius: 2px;
 }
 
 p {
-    font-size: 1.1em;
-    color: #2d3436;
+    font-size: 1rem;
+    color: #475569;
 }
 
-.skills-grid, .interests-grid {
+.card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
 }
 
-.skill-card, .interest-card, .project-card, .experience-card, .education-card {
-    background: #f9f9f9;
-    padding: 20px;
+.card {
+    background: #f8fafc;
+    padding: 1.5rem;
     border-radius: 10px;
-    border: 1px solid #dfe6e9;
+    border: 1px solid #e2e8f0;
 }
 
-.skill-card h4, .interest-card h4, .project-card h4, .experience-card h4, .education-card h4 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.4em;
-    color: #2d3436;
-    margin-bottom: 10px;
+.tags {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
-.project-card .tag {
-    display: inline-block;
-    background: #0984e3;
+.tag {
+    background: #1e3a8a;
     color: #ffffff;
-    padding: 5px 10px;
+    padding: 0.4rem 0.8rem;
     border-radius: 12px;
-    font-size: 0.9em;
-    margin-right: 8px;
-    margin-top: 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 
-ul.skills-list, ul.contact-list {
+.list {
     list-style: none;
     padding: 0;
 }
 
-ul.skills-list li, ul.contact-list li {
-    padding: 10px 0;
-    font-size: 1.1em;
-    border-bottom: 1px solid #dfe6e9;
+.list li {
+    padding: 0.75rem 0;
+    font-size: 1rem;
+    border-bottom: 1px solid #e2e8f0;
 }
 
-ul.skills-list li:last-child, ul.contact-list li:last-child {
+.list li:last-child {
     border-bottom: none;
 }
 
-ul.contact-list li a {
-    color: #0984e3;
+.contact-list li a {
+    color: #1e3a8a;
     text-decoration: none;
 }
 
-ul.contact-list li a:hover {
-    color: #6c5ce7;
+.contact-list li a:hover {
+    color: #7c3aed;
 }
 
 footer {
-    background: #2d3436;
-    color: #dfe6e9;
+    background: #1e293b;
+    color: #e2e8f0;
     text-align: center;
-    padding: 20px 0;
-    font-size: 1em;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+    margin-top: auto;
 }
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 2.2em;
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
     }
 
     h2 {
-        font-size: 1.2em;
+        font-size: 1.6rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 0.75rem;
     }
 
     .container {
         width: 95%;
     }
 
-    nav ul li {
-        margin: 0 10px;
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 2.5rem 1rem;
     }
 
-    .skills-grid, .interests-grid {
-        grid-template-columns: 1fr;
+    .section {
+        padding: 1.5rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
     }
 }
