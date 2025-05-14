@@ -3,32 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Nathan Eyer</title>
+    <title>Nathan Eyer - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Nathan Eyer - Portefolio</h1>
+        <div class="header-content">
+            <h1>Nathan Eyer</h1>
+            <h2>Étudiant en BUT Informatique | Spécialisé en Systèmes et Réseaux</h2>
+            <a href="CV_EYER_Alternance.pdf" class="btn-download" download>Télécharger mon CV</a>
+        </div>
     </header>
-
     <nav>
         <ul>
-            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html" class="active">Accueil</a></li>
             <li><a href="skills.html">Compétences</a></li>
             <li><a href="experience.html">Expériences</a></li>
             <li><a href="interests.html">Centres d'Intérêt</a></li>
             <li><a href="about.html">À Propos</a></li>
         </ul>
     </nav>
-
-    <main class="container">
-        <section id="home">
-            <h3>Bienvenue sur mon Portfolio</h3>
-            <p>Je suis étudiant en BUT Informatique, passionné par les systèmes et réseaux. Explorez mes compétences et expériences.</p>
-        </section>
+    <main>
+        <div class="container">
+            <section class="welcome-section">
+                <h3>Bienvenue sur mon Portfolio</h3>
+                <div class="divider"></div>
+                <p>Je suis étudiant en BUT Informatique à l'IUT Charlemagne Nancy, spécialisé dans le parcours Déploiement d'Applications Communicantes et Sécurisées (DACS). Passionné par les systèmes et réseaux, je recherche une alternance pour 2025/2026 pour approfondir mes compétences en administration, sécurité et virtualisation. Ce portfolio présente mes compétences, projets et expériences professionnelles.</p>
+                <p>Rigoureux, curieux et dynamique, j’aime relever des défis techniques et contribuer à des projets innovants. Explorez mes réalisations et n’hésitez pas à me contacter !</p>
+            </section>
+            <section class="projects-section">
+                <h3>Projets Réalisés</h3>
+                <div class="divider"></div>
+                <div class="project-card">
+                    <h4>Développement Web - ApiTracer</h4>
+                    <p>Stage chez SARL Les Ruchers du Bassigny (Fév-Avr 2025). Développement de nouvelles fonctionnalités pour le site web ApiTracer en PHP, intégration d’API et optimisation de l’interface utilisateur.</p>
+                    <span class="tag">PHP</span><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span>
+                </div>
+                <div class="project-card">
+                    <h4>Projet Universitaire - Gestion de Réseau</h4>
+                    <p>Configuration d’un réseau local avec DNS et DHCP sous Linux. Mise en place de scripts Bash pour automatiser la gestion des services.</p>
+                    <span class="tag">Linux</span><span class="tag">Bash</span><span class="tag">Réseaux</span>
+                </div>
+            </section>
+        </div>
     </main>
-
     <footer>
         <p>© 2025 Nathan Eyer. Tous droits réservés.</p>
     </footer>

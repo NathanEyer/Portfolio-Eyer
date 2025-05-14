@@ -3,35 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centres d'Intérêt - Nathan Eyer</title>
+    <title>Nathan Eyer - Centres d'Intérêt</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-            <h1>Nathan Eyer - Portefolio</h1>
+        <div class="header-content">
+            <h1>Nathan Eyer</h1>
+            <h2>Étudiant en BUT Informatique | Spécialisé en Systèmes et Réseaux</h2>
+            <a href="CV_EYER_Alternance.pdf" class="btn-download" download>Télécharger mon CV</a>
+        </div>
     </header>
-    
     <nav>
         <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="skills.html">Compétences</a></li>
             <li><a href="experience.html">Expériences</a></li>
-            <li><a href="interests.html">Centres d'Intérêt</a></li>
+            <li><a href="interests.html" class="active">Centres d'Intérêt</a></li>
             <li><a href="about.html">À Propos</a></li>
         </ul>
     </nav>
-
-    <main class="container">
-        <section id="interests">
-            <h3>Centres d'Intérêt</h3>
-            <ul>
-                <li>Sports: Escalade, badminton, vélo</li>
-                <li>Musique: Piano, percussions, marimba</li>
-            </ul> 
+    <main>
+        <div class="container">
+            <section>
+                <h3>Centres d'Intérêt</h3>
+                <div class="divider"></div>
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <h4>Sports</h4>
+                        <p>Escalade, badminton, vélo : des activités qui me permettent de rester actif et de relever des défis physiques.</p>
+                    </div>
+                    <div class="interest-card">
+                        <h4>Musique</h4>
+                        <p>Piano, percussions, marimba : je pratique et performe lors d’événements, alliant créativité et technique.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
-
     <footer>
-        <p>© 2023 Nathan Eyer. Tous droits réservés.</p>
+        <p>© 2025 Nathan Eyer. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
